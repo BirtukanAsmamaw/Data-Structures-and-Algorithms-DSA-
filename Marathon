@@ -1,0 +1,15 @@
+# import sys
+# import heapq
+# input = sys.stdin.readline
+ 
+# ############ ---- Input Functions ---- ############
+
+n = int(input())
+for _ in range(n):
+    distance = list(map(int, input().split()))
+    counter = 0
+    F_num = distance[0]
+    for i in range(1,4):
+        if distance[i] > F_num:
+            counter += 1
+    print(counter)
