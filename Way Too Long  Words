@@ -1,0 +1,8 @@
+n = int(input())
+for _ in range(n):
+    word = input()
+    L = len(word)
+    if L > 10:
+        print(word[0] + str(L - 2) + word[-1])
+    else:
+        print(word)
